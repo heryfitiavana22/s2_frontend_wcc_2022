@@ -28,6 +28,26 @@ a:focus-visible {outline: none !important;}
     padding-left: 42px;
     padding-bottom: 35px;   
 }
+@keyframes wingle {
+    0% {transform: translateX(0);}
+    20% {transform: translateX(5px);}
+    40% {transform: translateX(0);}
+    60% {transform: translateX(5px);}
+    80% {transform: translateX(0px);}
+    85% {transform: translateX(5px);}
+    90% {transform: translateX(0px);}
+    95% {transform: translateX(5px);}
+    100% {transform: translateX(0px);}
+}
+.wingle {
+    display: block;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.wingle:hover {
+    animation-name: wingle;
+    animation-duration: 1s;
+}
 .wingle, .bonne_ance {
     font-size: 19px;
     font-weight: bolder;
@@ -187,7 +207,9 @@ footer > div > a:hover {
     width: 70px;
     height: 70px;
     border-radius: 50%;
+    transition: all 0.5s ease;
 }
+.connected > img:hover {transform: scale(1.1);}
 .connected > span {
     width: 100%;
     text-align: center;
@@ -246,7 +268,10 @@ footer > div > a:hover {
 .row-container > img {
     width: 50px;
     height: 100%;
+    transition: all 0.5s ease;
+    cursor: pointer;
 }
+.row-container > img:hover {transform: scale(1.1);}
 .text {
     display: flex;
     flex-wrap: wrap;
