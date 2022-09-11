@@ -1,0 +1,407 @@
+body {
+    background-color: #3d339a !important;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+a:focus-visible {outline: none !important;}
+.container-element {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 88%;
+    height: 100%;
+    margin: 7% auto;
+}
+.background {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 30px;
+    z-index: -1;
+}
+.left, .right {
+    padding-top: 42px;
+    padding-left: 42px;
+    padding-bottom: 35px;   
+}
+.wingle, .bonne_ance {
+    font-size: 19px;
+    font-weight: bolder;
+    color: #30253f;
+}
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    width: 52%;
+    margin-top: 60px;
+    padding: 0;
+    list-style-type: none;
+    font-size: 14px;
+    color: #3c324a;
+}
+.nav-item {
+    padding: 6px 0;
+    cursor: pointer;
+}
+.nav-item:hover {color: #ffab00;}
+.line {
+    display: block;
+    width: 0%;
+    height: 1px;
+    background-color: #ffab00;
+    transition: all 0.5s ease;
+}
+.nav-item:hover .line {width: 50%;}
+.active {
+    background-color: #ffab00;
+    color: #fff9ed;
+    border: 1px solid #ffab00;
+    border-radius: 10px;
+    padding: 6px 15px;
+    transition: all 0.5s ease;
+}
+.active:hover {
+    color: #ffab00;
+    border: 1px solid #ffab00;
+    background-color: #fff9ed;
+}
+#toggle-icon {
+    display: none;
+    position: absolute;
+    right: 35px;
+    top: 35px;
+    color: #30253f;
+    font-weight: bolder;
+    font-size: 19px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+#toggle-icon:hover {
+    color: #262428;
+    transform: translateX(-2px);
+}
+.content {
+    display: flex;
+    width: 100%;
+}
+.home {
+    display: flex;
+    height: 100%;
+}
+.home > img {
+    border-radius: 15px;
+    transition: all 0.5s ease;
+    transform: translateX(0);
+}
+.home > img:hover {transform: translateX(1px);}
+.right-content {
+    position: relative;
+    margin-left: 32px;
+}
+.bonne_ance {display: block;}
+.moreDetails {
+    color: #ffb41e;
+    font-size: 14px;
+    transition: all 0.5s ease;
+}
+.moreDetails:hover {
+    color: #d49619;
+    padding-left: 5px;
+}
+a:focus-visible {outline: none;}
+.line-small, .line-extra-small {
+    position: absolute;
+    display: block;
+    width: 5px;
+    border-radius: 7px;
+    background-color: #699dff;
+}
+.line-small {
+    height: 20px;
+    bottom: 36px;
+    opacity: 0.9;
+}
+.line-extra-small {
+    height: 6px;
+    opacity: 0.4;
+}
+.left > footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 46px;
+}
+.left > footer > div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 49%;
+    height: 206px;
+    box-shadow: 1px 1px 0px 1px rgb(240, 240, 240);
+    border-radius: 15px;
+    /* background-color: #30253f; */
+}
+.image-footer {padding-top: 31px;}
+.image-footer > img {
+    width: 70px;
+    height: 70px;
+    transition: all 0.5s ease;
+    transform: translateX(0);
+}
+.image-footer > img:hover {transform: translateX(2px);}
+footer > div > * {
+    width: 100%;
+    text-align: center;
+}
+footer > div > span {
+    font-size: 14px;
+    color: #4a4056;
+}
+.left > footer > div > span {
+    margin-bottom: -11px;
+    margin-top: 17px;
+}
+footer > div > a {
+    color: #ffb41e;
+    font-size: 12px;
+    transition: all 0.5s ease;
+}
+footer > div > a:hover {
+    color: #d49619;
+    padding-right: 4px;
+}
+
+.right {position: relative;}
+.connected {
+    position: absolute;
+    right: 0;
+    left: 37%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 63%;
+}
+.connected > img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.connected > span {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+.edit {
+    font-size: 11px;
+    margin-top: 7px;
+    color: #6c4ad2;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.edit:hover {
+    margin-left: 2px;
+    color: #5432ba;
+}
+.name {
+    color: #3d334b;
+    font-size: 19px;
+    margin-top: 20px;
+}
+.job {
+    font-size: 13px;
+    color: #584f65;
+    margin-top: 6px;
+}
+.address {
+    color: #6c6475;
+    font-size: 14px;
+    margin-top: 6px;
+}
+#close {
+    display: none;
+    position: absolute;
+    right: -46%;
+    color: #aaaaaa;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+#close:hover {
+    transform: rotate(180deg);
+    color: #939393;
+}
+
+.content-right {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+}
+.row-container {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 46px;
+}
+.row-container > img {
+    width: 50px;
+    height: 100%;
+}
+.text {
+    display: flex;
+    flex-wrap: wrap;
+    width: 36%;
+    margin-left: 13px;
+}
+.hours, .caption {
+    width: 100%;
+    color: #544e5d;
+    font-size: 13px;
+    font-weight: bold;
+}
+.number {font-size: 17px}
+.image-person {
+    display: flex;
+    padding-top: 7px;
+}
+.image-person > img {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #f5f5f5;
+    box-shadow: 1px 1px 1px #f5f5f5;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.image-person > img:hover {
+    margin-right: 15px;
+}
+
+#more {
+    position: absolute;
+    left: 76%;
+    transform: rotate(90deg);
+    color: #807a8a;
+    margin-top: 14px;
+    cursor: pointer;
+}
+#more:hover {color: #686372;}
+.right > footer {
+    position: absolute;
+    bottom: 29px;
+    left: -6px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.right > footer > span {
+    font-size: 12px;
+    color: #c4c2c8;
+    font-weight: bold;
+}
+.icon {
+    width: 24%;
+    display: flex;
+    justify-content: space-between;
+}
+.icon > span {color: #6d7587; cursor: pointer;}
+.icon > span:hover {color: #686b73;}
+
+@keyframes texte {
+    0% {opacity: 0.5;}
+    10% {opacity: 1;}
+    20% {opacity: 0.5;}
+    30% {opacity: 1;}
+    40% {opacity: 0.5;}
+    50% {opacity: 1;}
+    60% {opacity: 0.5;}
+    70% {opacity: 1;}
+    80% {opacity: 0.6}
+    90% {opacity: 1;}
+    100% {opacity: 0.5;}
+}
+.animation {
+    position: fixed;
+    top : 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    color: #0e3fab;
+    font-size: 50px;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+.animation > span {
+    position: relative; top:45%;
+    -webkit-animation-name: texte;
+    -webkit-animation-duration: 5s;
+    animation-name: texte;
+    animation-duration: 5s;
+}
+
+@media screen and (max-width:991px) {
+    .background > img {display: none;}
+    .container-element {width: 95%;}
+    .left, .right {
+        padding-top: 32px;
+        padding-left: 32px;
+    }
+    .nav-list {
+        width: 40%;
+        margin-top: 50px;
+    }
+    #toggle-icon {display: block;}
+    .content-right {position: static;}
+    /* .connected {display: none;} */
+    .to-right {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 100%;
+        height: 100%;
+        background-color: #3d339a;
+        z-index: 1;
+        padding-top: 22px;
+        transition: all 0.5s ease;
+    }
+    .connected > span {position: relative;}
+    .edit {top: -54px; color: #f5f5f5;}
+    .edit:hover {color: #fff;}
+    .name {top: -74px; color: #c1c1c1;}
+    .job {top: -131px; color: #949494;}
+    .address {top: -186px; color: #aaaaaa;}
+    #close {display: block;}
+}
+
+@media screen and (max-width:767px) {
+    .container-element {margin: 0 0; width: 100%;}
+    .background {border-radius: 0;}
+    .left, .right {padding: 19px 14px;}
+    .nav-list {
+        width: 49%;
+        margin-top: 36px;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .nav-list {
+        width: 83%;
+        margin-top: 22px;
+        font-size: 13px;
+    }
+    .active {padding: 5px 7px;}
+    #toggle-icon {top: 22px;}
+    .line-small, .line-extra-small {display: none;}
+    .content {flex-wrap: wrap;}
+    .wingle, .bonne_ance {font-size: 17px;}
+    .left > footer {margin-top: 25px;}
+    .number {font-size: 15px;}
+    .hours, .caption {font-size: 12px;}
+    .row-container {margin-bottom: 30px;}
+    #more {left: 86%;}
+    .right > footer {flex-wrap: wrap; position: static;}
+    .right > footer > * {width: 100%;}
+    .icon {margin-top: 14px;}
+}
